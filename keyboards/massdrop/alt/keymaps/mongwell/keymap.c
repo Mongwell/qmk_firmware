@@ -55,7 +55,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case VC_MUTE:
             if (record->event.pressed) {
-                SEND_STRING(SS_LSFT("`") SS_DELAY(250) SS_LCTL(SS_LSFT("m")) SS_DELAY(100) SS_LSFT("`"));
+                SEND_STRING(SS_LSFT("`") SS_DELAY(250) SS_LCTL(SS_LSFT("d")) SS_DELAY(100) SS_LSFT("`"));
             }
             return false;
         case U_T_AUTO:
